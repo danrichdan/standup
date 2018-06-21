@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Standup Report</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="grey darken-3">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Standup</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Add Notes</a></li>
+                <li><a href="badges.html">Previous Days</a></li>
+                <li><a href="collapsible.html">Misc</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="main-content">
+            <div class="container">
+                <div class="row">
+                    <ul id="tabs-swipe-demo" class="tabs">
+                        <li class="tab col s3"><a class="active" href="#have-done">Test 1</a></li>
+                        <li class="tab col s3"><a href="#working-on">Test 2</a></li>
+                        <li class="tab col s3"><a href="#blockers">Test 3</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <section id="have-done" class="col s12">
+                        <h3>Have Done</h3>
+                        <ul class="collapsible">
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">filter_drama</i>CORE-2030</div>
+                              <div class="collapsible-body"><span>Tested in Production. Marked as done.</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">place</i>Admin Lookup</div>
+                              <div class="collapsible-body"><span>Tested Multiple tickets</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">whatshot</i>Messaging</div>
+                              <div class="collapsible-body"><span>Experimented with Email Formatting</span></div>
+                            </li>
+                          </ul>
+                          <a class="waves-effect waves-light btn">Archive</a>
+                          <a class="show-have-done waves-effect waves-light btn">Add</a>
+                          <div id="have-done-form" class="row form-section hide">
+                              <div class="col s12 m6">
+                                  <div class="card">
+                                      <div class="card-content">
+                                          <span class="card-title">Add Have Dones</span>
+                                          <div class="row">
+                                              <form class="col s12">
+                                                  <div class="row">
+                                                      <div class="input-field col s12">
+                                                          <input placeholder="Title" id="title" type="text" class="validate">
+                                                          <!-- <label for="title">Title</label> -->
+                                                      </div>
+                                                            
+                                                  </div>
+                                                  <div class="row">
+                                                      
+                                                    <div class="input-field col s12">
+                                                        
+                                                        <textarea class="materialize-textarea" name="description" id="description" cols="20" rows="30"></textarea>
+                                                        <label for="description">Description</label>
+                                                    </div>
+                                                        
+                                                  </div>
+                                                  <a class="add-have-done waves-effect waves-light btn">Add Have Done</a>
+                                                  <a class="add-have-done waves-effect waves-light btn red">Close</a>
+                                              </form>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </section>
+                    <section id="working-on" class="col s12">
+                        <h3>Working On</h3>
+                        <ul class="collapsible">
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Admin Lookup</div>
+                              <div class="collapsible-body"><span>I will test these as they become testable</span></div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">place</i>CORE Tickets</div>
+                              <div class="collapsible-body"><span>Will test as needed</span></div>
+                            </li>
+                          </ul>
+                          <a class="add-working-on waves-effect waves-light btn">Add</a>
+                    </section>
+                    <section id="blockers" class="col s12">
+                        <h3>Blockers</h3>
+                        <ul class="collapsible">
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Stage is broken</div>
+                              <div class="collapsible-body"><span>Unable to test until Stage is working Correctly</span></div>
+                            </li>
+                          </ul>
+                          <a class="add-blocker waves-effect waves-light btn">Add</a>
+                    </section>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
